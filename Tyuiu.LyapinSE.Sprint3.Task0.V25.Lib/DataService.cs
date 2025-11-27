@@ -9,7 +9,7 @@ namespace Tyuiu.LyapinSE.Sprint3.Task0.V25.Lib
             double sumSeries = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                sumSeries = Math.Pow(4 / (1 + Math.Pow(value, i)), i);
+                sumSeries += Math.Pow(4 / (1 + Math.Pow(value, i)), i);
             }
             return sumSeries;
         }
