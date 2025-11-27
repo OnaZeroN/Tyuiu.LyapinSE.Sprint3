@@ -16,7 +16,7 @@ namespace Tyuiu.LyapinSE.Sprint3.Task7.V7.Lib
                     valueArray[index] = 0;
                     continue;
                 }
-                valueArray[index] = Math.Cos(x) + Math.Cos(x) / x + 2 - 3 * x;
+                valueArray[index] = Math.Round(Math.Cos(x) + (Math.Cos(x) / x + 2) - (3 * x), 2);
                 index++;
             }
             return valueArray;
