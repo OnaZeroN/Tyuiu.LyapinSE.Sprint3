@@ -10,7 +10,7 @@ namespace Tyuiu.LyapinSE.Sprint3.Task1.V25.Lib
             while (startValue <= stopValue)
             {
                 multSeries *= (Math.Pow(value, startValue) - 1 / 4) * Math.Cos(5);
-                stopValue++;
+                startValue++;
             }
             return Math.Round(multSeries, 3);
         }
