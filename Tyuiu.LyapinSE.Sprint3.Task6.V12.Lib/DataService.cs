@@ -9,7 +9,7 @@ namespace Tyuiu.LyapinSE.Sprint3.Task6.V12.Lib
             int sum = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                for (int d = 1; d < x; d++)
+                for (int d = 1; d <= x; d++)
                 {
                     if (x % d == 0)
                     {
