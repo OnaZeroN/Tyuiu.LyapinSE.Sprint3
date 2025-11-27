@@ -14,9 +14,13 @@ namespace Tyuiu.LyapinSE.Sprint3.Task7.V7.Lib
                 if (x + 2 == 0)
                 {
                     valueArray[index] = 0;
-                    continue;
+               
                 }
-                valueArray[index] = Math.Round(Math.Cos(x) + (Math.Cos(x) / x + 2) - (3 * x), 2);
+                else
+                {
+                    double y = Math.Cos(x) + (Math.Cos(x) / (double)(x + 2)) - (3 * x);
+                    valueArray[index] = Math.Round(y, 2);
+                }
                 index++;
             }
             return valueArray;
