@@ -11,7 +11,7 @@ namespace Tyuiu.LyapinSE.Sprint3.Task0.V25.Lib
             {
                 sumSeries += Math.Pow(4 / (1 + Math.Pow(value, i)), i);
             }
-            return sumSeries;
+            return Math.Round(sumSeries, 3);
         }
     }
 }
